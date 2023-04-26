@@ -6,25 +6,25 @@
       class="bg-white"
     >
     <v-spacer></v-spacer>
-      <v-toolbar-l>
+      <v-toolbar-l class="" style="padding:20px; ">
           <v-img
   :width="100" 
   aspect-ratio="16/9"
   cover
   src="../assets/logo.jpg"
-></v-img>
+ style="margin:0 10px;"></v-img>
      </v-toolbar-l>
 
      
      
      
       <v-spacer></v-spacer>
-      <v-btn class="drive hoverme mr-2">become a driver</v-btn>
-      <v-btn class=" mr-2">ride</v-btn>
-      <v-btn class=" mr-2">help</v-btn>
-      <v-btn class=" mr-2">sign up</v-btn>
-<span class="font-weight-bold">SIGN IN</span>
-      <v-btn icon>
+      <v-btn class="drive hoverme mr-2" color="white">become a driver</v-btn>
+      <v-btn class="hoverme mr-2">ride</v-btn>
+      <v-btn class="hoverme mr-2">help</v-btn>
+      <v-btn class="hoverme mr-2">sign up</v-btn>
+<span class="font-weight-bold ">SIGN IN</span>
+      <v-btn icon class="hoverme">
         <v-icon>mdi-account-circle</v-icon>
       </v-btn>
     </v-toolbar>
