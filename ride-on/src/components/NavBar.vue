@@ -6,7 +6,7 @@
       class="bg-white"
     >
     <v-spacer></v-spacer>
-      <v-toolbar-l class="" style="padding:20px; ">
+      <v-toolbar-l class="" style="padding:20px;">
           <v-img
   :width="100" 
   aspect-ratio="16/9"
@@ -44,11 +44,11 @@
      <v-spacer></v-spacer>
       
 <v-nav class=""><ul class="d-flex ">
-         <v-btn  class="hoverme"> <v-icon icon="mdi-home" />Home</v-btn>
-         <v-btn class="hoverme text-white p-4 "><v-icon class="text-white">mdi-information</v-icon> About</v-btn>
-         <v-btn class="hoverme text-white p-4 "><v-icon class="text-white">mdi-car-cog</v-icon>Services</v-btn>
-         <v-btn class="hoverme text-white p-4 "><v-icon class="text-white">mdi-car-connected</v-icon>Our Rides</v-btn>
-         <v-btn class="hoverme text-white p-4 "><v-icon class="text-white">mdi-phone</v-icon>Contact</v-btn>
+         <v-btn  class="hovermes"> <v-icon icon="mdi-home" />Home</v-btn>
+         <v-btn class="hovermes "><v-icon class="hovermes ">mdi-information</v-icon> About</v-btn>
+         <v-btn class="hovermes  "><v-icon class="hovermes">mdi-car-cog</v-icon>Services</v-btn>
+         <v-btn class="hovermes  "><v-icon class="hovermes">mdi-car-connected</v-icon>Our Rides</v-btn>
+         <v-btn class="hovermes  "><v-icon class="hovermes">mdi-phone</v-icon>Contact</v-btn>
                   
 </ul></v-nav>
     
@@ -89,6 +89,9 @@ methods: {
 .hoverme:hover{
           color: white;
           background: orange;
+}
+.hovermes:hover{
+          color: orange;
 }
 
  img{
