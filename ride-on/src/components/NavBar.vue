@@ -19,10 +19,10 @@
      
      
       <v-spacer></v-spacer>
+      <v-btn class="drive hoverme mr-2" color="white">sign up</v-btn>
       <v-btn class="drive hoverme mr-2" color="white">become a driver</v-btn>
       <v-btn class="hoverme mr-2">ride</v-btn>
       <v-btn class="hoverme mr-2">help</v-btn>
-      <v-btn class="hoverme mr-2">sign up</v-btn>
 <span class="font-weight-bold ">SIGN IN</span>
       <v-btn icon class="hoverme">
         <v-icon>mdi-account-circle</v-icon>
@@ -67,9 +67,7 @@ name: 'NavBar',
 
 
 data() {
-          return {
-      hover: false,
-    };
+   
 },
 methods: {
           hoverMe() {
