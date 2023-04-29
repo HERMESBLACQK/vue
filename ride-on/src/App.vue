@@ -5,18 +5,20 @@
       <router-view/>
     </v-main>
     <FooterView />
+    <FooterApp />
   </v-app>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
-import FooterView from './components/FooterView.vue'
+import FooterApp from './components/FooterApp.vue'
 
 export default {
   name: 'App',
 components: {
  NavBar,
- FooterView
+ FooterApp,
+
 },
 
 

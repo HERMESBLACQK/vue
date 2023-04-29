@@ -1,12 +1,12 @@
 <template>
-            <div>
+            <div app>
     <v-toolbar
       white
       prominent
       class="bg-white"
-    >
+    app>
     <v-spacer></v-spacer>
-      <v-toolbar-l class="" style="padding:20px;">
+      <v-toolbar-l class="img" style="padding:20px;">
           <v-img
   :width="100" 
   aspect-ratio="16/9"
@@ -19,14 +19,21 @@
      
      
       <v-spacer></v-spacer>
-      <v-btn class="drive hoverme mr-2" color="white">sign up</v-btn>
-      <v-btn class="drive hoverme mr-2" color="white">become a driver</v-btn>
-      <v-btn class="hoverme mr-2">ride</v-btn>
-      <v-btn class="hoverme mr-2">help</v-btn>
-<span class="font-weight-bold ">SIGN IN</span>
-      <v-btn icon class="hoverme">
-        <v-icon>mdi-account-circle</v-icon>
-      </v-btn>
+      <v-list-title v-for="list in headlist" :key="list">
+
+        <v-btn class="drive hoverme mr-2" color="white">{{ list.text }}</v-btn>
+      </v-list-title>
+      <v-list-title v-for="btn in headbtns" :key="btn">
+
+        <v-btn class="hoverme mr-2">{{btn.text}}</v-btn>
+      </v-list-title>
+      <v-list-content v-for="cont in headlistcont" :key="cont">
+
+        <span class="font-weight-bold text-uppercase">{{ cont.text }}</span>
+              <v-btn icon class="hoverme text-body-2">
+                <v-icon>{{ cont.icon }}</v-icon>
+              </v-btn>
+      </v-list-content>
     </v-toolbar>
   </div>
    <div>
@@ -43,12 +50,9 @@
    </v-toolbar-search>
      <v-spacer></v-spacer>
       
-<v-nav class=""><ul class="d-flex ">
-         <v-btn  class="hovermes"> <v-icon icon="mdi-home" />Home</v-btn>
-         <v-btn class="hovermes "><v-icon class="hovermes ">mdi-information</v-icon> About</v-btn>
-         <v-btn class="hovermes  "><v-icon class="hovermes">mdi-car-cog</v-icon>Services</v-btn>
-         <v-btn class="hovermes  "><v-icon class="hovermes">mdi-car-connected</v-icon>Our Rides</v-btn>
-         <v-btn class="hovermes  "><v-icon class="hovermes">mdi-phone</v-icon>Contact</v-btn>
+<v-nav class=" d-flex" ><ul class="d-flex " v-for="navlist in navlist" :key="navlist">
+         <v-btn  class="hovermes d-flex" > <v-icon>{{ navlist.icon }}</v-icon>{{ navlist.text }}</v-btn>
+ 
                   
 </ul></v-nav>
     
@@ -67,7 +71,27 @@ name: 'NavBar',
 
 
 data() {
-   
+   return{
+    headbtns: [
+      { text: 'Ride', route: '/'},
+      { text: 'Help', route: '/'}
+    ],
+    headlist: [
+      { text: 'sign up', route: '/'},
+      { text: 'become a driver', route: '/'}
+    ],
+    navlist: [
+      { icon: 'mdi-home', text: 'home', route: '/'},
+      { icon: 'mdi-information', text: 'about', route: '/'},
+      { icon: 'mdi-car-cog', text: 'Services', route: '/'},
+      { icon: 'mdi-car-connected', text: 'Our Rides', route: '/'},
+      { icon: 'mdi-phone', text: 'Contact', route: '/'}
+    ],
+    headlistcont: [
+      { icon: 'mdi-account-circle', text: 'sign in', route: '/'}
+      // { text: 'become a driver', route: '/'}
+    ],
+   }
 },
 methods: {
           hoverMe() {
@@ -92,10 +116,10 @@ methods: {
           color: orange;
 }
 
- img{
+ .img img{
           width: 100%;
 }
- img:hover{
+ .img img:hover{
           /* width: 120%; */
           transition-duration: 0.8s;
           cursor: pointer;

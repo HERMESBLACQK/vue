@@ -6,7 +6,7 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 
 export default createVuetify({
-    theme: {
+    theme: { 
       themes: {
         light: {
           primary: "#14C6FF",
@@ -18,7 +18,7 @@ export default createVuetify({
           warning: "#FFC107",
           lightblue: "#14c6FF",
           yellow: "#FFCF00",
-          pink: "#FF1976",
+          pink: "#f3dde1",
           orange: "#FF8657",
           magenta: "#C33AFC",
           darkblue: "#1E2D56",
