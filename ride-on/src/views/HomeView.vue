@@ -176,7 +176,7 @@ return {
  .scale{
   margin: 20px 0;
   /* transform: skew(-6deg, 3deg); */
-border-top-left-radius: 250px;
+/* border-top-left-radius: 250px; */
 border-top-right-radius: 350px;
 border-bottom-left-radius: 190px;
 border-bottom-right-radius: 190px;

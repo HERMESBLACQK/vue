@@ -111,6 +111,7 @@ methods: {
 .hoverme:hover{
           color: white;
           background: orange;
+          cursor: pointer;
 }
 .hovermes:hover{
           color: orange;

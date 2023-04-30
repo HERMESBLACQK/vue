@@ -21,7 +21,7 @@
       <v-card-items class="d-block justify-center">
       <v-ul-title></v-ul-title>
       <v-ul class="pr-2 d-block " v-for="list in second" :key="list">
-        <v-list class="d-block pa-2 text-body-2 bg-black">
+        <v-list class="d-block pa-2 text-body-2 bg-black hoverme">
           {{ list.list }}
         </v-list >
    
@@ -32,7 +32,7 @@
 
    
       <v-ul class="pr-2 d-block " v-for="third in third" :key="third">
-        <v-list class="d-block col pa-2 text-body-2 bg-black">
+        <v-list class="d-block col pa-2 text-body-2 bg-black hoverme">
           {{ third.list }}
         </v-list >
    
@@ -61,7 +61,7 @@
 
 
       </v-col>
-      <v-col class=" text-center mt-4 pa-4" variant="" cols="">
+      <v-col class=" text-center mt-4 " variant="" cols="">
         <v-card-title class="">
       <h3>Download Mobile App</h3>
     </v-card-title>

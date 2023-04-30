@@ -1,7 +1,7 @@
 
 <template>
           <div>
-           swipe
+           
       
           </div>
           <v-container fluid class="testimonial pa-12 text-center d-flex justify-center">
