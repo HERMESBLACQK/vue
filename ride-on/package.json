@@ -13,6 +13,7 @@
     "roboto-fontface": "*",
     "swiper": "^9.2.4",
     "vue": "^3.2.13",
+    "vue-carousel": "^0.18.0",
     "vue-router": "^4.0.3",
     "vuetify": "^3.0.0-beta.0",
     "webfontloader": "^1.0.0"
