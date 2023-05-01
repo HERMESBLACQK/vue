@@ -68,8 +68,10 @@
   </v-row>
 </v-container>
 
-<v-container fluid class="testimonial pa-8 text-center d-flex justify-space-between">
- <v-card bg-white  class="pa-8 text-center ma-2" v-for="lot in box" :key="lot">
+<v-container fluid class="testimonial pa-8 text-center ">
+  <h3 class="text-uppercase font-weight-bold text-white">What Our Customers Say</h3>
+  <v-col class="d-flex justify-space-between">
+    <v-card bg-white  class="pa-8 text-center ma-2" v-for="lot in box" :key="lot">
   <v-card-title class="d-flex justify-center ">
 
 <v-card-img class="card-pic pa-4 w-15 d-flex justify-center mx-16 bg-pink-lighten-5" variant-outlined>
@@ -113,6 +115,8 @@
    
   </v-card-foot>
  </v-card>
+
+  </v-col>
 
 
 </v-container>
@@ -199,7 +203,7 @@ border-bottom-right-radius: 190px;
   left: 45%;
  }
  .testimonial{
-  background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('../assets/background.jpg');;
   background-size: cover;
   background-repeat: no-repeat;
