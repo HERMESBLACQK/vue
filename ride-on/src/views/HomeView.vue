@@ -68,8 +68,8 @@
   </v-row>
 </v-container>
 
-<v-container fluid class="testimonial pa-12 text-center d-flex justify-center">
- <v-card bg-white flat class="pa-8 w-50 text-center" v-for="lot in box" :key="lot">
+<v-container fluid class="testimonial pa-8 text-center d-flex justify-space-between">
+ <v-card bg-white  class="pa-8 text-center ma-2" v-for="lot in box" :key="lot">
   <v-card-title class="d-flex justify-center ">
 
 <v-card-img class="card-pic pa-4 w-15 d-flex justify-center mx-16 bg-pink-lighten-5" variant-outlined>
@@ -84,7 +84,7 @@
 </v-card-title>
 <v-card-subtitle class="text-md-h6 font-weight-bold text-black">
 
-  <h4>James Milner</h4>
+  <h4>{{ lot.name }}</h4>
 </v-card-subtitle>
   <v-card-text>
     {{ lot.text }}
@@ -118,20 +118,15 @@
 </v-container>
 
 
-<SwiperBar />
 
 </template>
 
 <script>
-import SwiperBar from '../components/SwiperBar.vue'
 
 
 export default ({
   name: 'HomeView',
-  components: {
-   SwiperBar
 
-},
 data () {
 return {
   header:[
@@ -149,7 +144,19 @@ return {
     { title: ' Arrive Safely', icon: 'mdi-map-marker-radius', text: '   Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque recusandae a ipsam repudiandae officia adipisci quidem labore, vitae consequatur'}
   ],
   box: [
-  {id: 1,  text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus tenetur provident blanditiis excepturi tempora in exercitationem repellendus, libero reprehenderit.', icon: 'mdi-star'
+  {name: 'john mary',  text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus tenetur provident blanditiis excepturi tempora in exercitationem repellendus, libero reprehenderit.', icon: 'mdi-star'
+
+  
+},
+  {name: 'john sarah',  text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus tenetur provident blanditiis excepturi tempora in exercitationem repellendus, libero reprehenderit.', icon: 'mdi-star'
+
+  
+},
+  {name: 'john pauline', text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus tenetur provident blanditiis excepturi tempora in exercitationem repellendus, libero reprehenderit.', icon: 'mdi-star'
+
+  
+},
+  {name: 'john wendy',  text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus tenetur provident blanditiis excepturi tempora in exercitationem repellendus, libero reprehenderit.', icon: 'mdi-star'
 
   
 }
