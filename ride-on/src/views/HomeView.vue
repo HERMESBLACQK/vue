@@ -70,17 +70,20 @@
 
 <v-container fluid class="testimonial pa-8 text-center ">
   <h3 class="text-uppercase font-weight-bold text-white">What Our Customers Say</h3>
+  <v-row>
+
+ 
   <v-col class="d-flex justify-space-between">
     <v-card bg-white  class="pa-8 text-center ma-2" v-for="lot in box" :key="lot">
   <v-card-title class="d-flex justify-center ">
 
-<v-card-img class="card-pic pa-4 w-15 d-flex justify-center mx-16 bg-pink-lighten-5" variant-outlined>
+<v-card-img class="card-pic pa-4 w-15 d-flex justify-center mx-16 " variant-outlined>
   <v-img
-  :width="70" 
+  :width="50" 
   aspect-ratio="4/3"
   cover
   height="100%"
-  src="../assets/2cars.png" class=" "
+  src="../assets/2.jpg" class=" "
 ></v-img>
   </v-card-img>
 </v-card-title>
@@ -117,7 +120,7 @@
  </v-card>
 
   </v-col>
-
+</v-row>
 
 </v-container>
 
